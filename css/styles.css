@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --airbus-blue: #001f59;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    color: black;
+    font-size: 1rem;
+} 
+
+.access {
+    position: absolute;
+    left: -15000px;
+}
+
+.enTete {
+    background-color: var(--airbus-blue);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    z-index: 10;
+}
+
+.logo{
+    height: 20%;
+}
+
+#contenu {
+    background: url(/images/ciel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding: 10%;
+}
+
+p {
+    padding: 10%;
+}
+
+.imgModele {
+    width: 60%;
+    border: solid 3px white;
+    float: right;
+}
+
+.piedDePage {
+    position: relative;
+    bottom: 0;
+    background-color: var(--airbus-blue);
+    height: 8vh;
+}
+
+.piedDePage > p {
+    color: white;
+}
+
