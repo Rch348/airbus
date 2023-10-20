@@ -13,6 +13,8 @@ body {
     font-family: Arial, Verdana, Helvetica, sans-serif;
     color: black;
     font-size: 1rem;
+    margin-top: 65px;
+    height: 100vh;
 } 
 
 .access {
@@ -21,51 +23,124 @@ body {
 }
 
 .enTete {
+    display: grid;
+    grid-template-columns: 256px 1fr 100px;
     background-color: var(--airbus-blue);
     position: fixed;
-    top: 0;
     width: 100%;
-    height: 8vh;
+    height: 65px;
+    top: 0;
     z-index: 10;
 }
 
-.logo{
+.logo {
     height: 20%;
 }
 
-#contenu {
-    background: url(/images/ciel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.itemNav {
+    display: flex;
+    justify-content: space-between;
+
 }
 
-h1 {
+.itemNav > li > a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+#menuResponsive {
+    color: white;
+    height: 80px;
+}
+
+
+#contenu {
+    background-image: url(../images/ciel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenuPage {
+    min-height: 100vh;
+}
+
+.contenuPage p {
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
     text-align: center;
 }
 
-h2 {
-    padding: 10%;
+/*article {
+    background-color: white;
+}
+*/
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
 }
 
-p {
-    padding: 10%;
+figure {
+    position: center;
 }
 
 .imgModele {
-    width: 60%;
-    border: solid 3px white;
-    float: right;
+    width: 27%;
+    border: solid 3px var(--airbus-blue);
+    
+}
+
+iframe {
+    padding-left: 40px;
 }
 
 .piedDePage {
-    position: relative;
     bottom: 0;
     background-color: var(--airbus-blue);
-    height: 8vh;
+    height: 65px;
 }
 
 .piedDePage > p {
     color: white;
+    text-align: center;
+    padding-top: 20px;;
+    margin-top: 0;
 }
 
+
+@media screen and (max-width: 768px) {
+    .itemNav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    enTete {
+        grid-template-columns: 256px 250px 1fr;
+    }
+    
+    itemNav {
+
+    }
+
+    #menuResponsive {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    enTete {
+        grid-template-columns: 256px repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+}
