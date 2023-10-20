@@ -26,28 +26,24 @@ body {
     display: grid;
     grid-template-columns: 256px 1fr 100px;
     background-color: var(--airbus-blue);
-    position: fixed;
     width: 100%;
-    height: 65px;
-    top: 0;
-    z-index: 10;
+    height: 65px;    
+    top: 0;             /* Pour que l'en-tête soit positionné sur le dessus de la page */
+    position: fixed;    /* Pour que l'en-tête soit collé sur le dessus de la page */
+   /* z-index: 5;*/
 }
 
 .logo {
-    height: 20%;
+  /*  height: 20%;*/
 }
 
-.itemNav {
+.nav ul {
     display: flex;
+    flex-direction: space-around;
     justify-content: space-between;
-
 }
 
-.itemNav > li > a {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+.itemNav li a {
     color: white;
     text-decoration: none;
 
@@ -55,19 +51,17 @@ body {
 
 #menuResponsive {
     color: white;
-    height: 80px;
+    height: 90px;
 }
 
 
 #contenu {
-    background-image: url(../images/ciel.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(/images/ciel.jpg) center / cover no-repeat fixed;
 }
 
 .contenuPage {
-    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.471);
+    min-height: 100vh;          /* Pour que le contenu principal s'étende au minimum sur toute la hauteur de l'écran, quel que soit la dimension */
 }
 
 .contenuPage p {
@@ -77,28 +71,47 @@ body {
     text-align: center;
 }
 
-/*article {
-    background-color: white;
-}
-*/
-
 h1 {
+    font-size: 60px;
     text-align: center;
     padding-top: 40px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   /* background-color: white;*/
 }
 
 figure {
     position: center;
 }
 
+article > p {
+    font-size: 34px;
+    padding-top: 40px;
+    text-align: left;
+}
+
+figcaption {
+    font-size: 40px;
+}
+
 .imgModele {
-    width: 27%;
+    min-width: 60%;
+    max-width: 100%;
+    height: auto;
     border: solid 3px var(--airbus-blue);
     
 }
 
 iframe {
-    padding-left: 40px;
+    padding-top: 60px;
+}
+
+#A380 > p {
+    margin-bottom: 0;
 }
 
 .piedDePage {
@@ -110,37 +123,49 @@ iframe {
 .piedDePage > p {
     color: white;
     text-align: center;
-    padding-top: 20px;;
-    margin-top: 0;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-top: 0;      /* Pour que le pied de page soit positionné sur le bas de la page */
 }
 
 
-@media screen and (max-width: 768px) {
-    .itemNav {
-        display: none;
-    }
+@media screen and (min-width: 576px) {
+    
 }
 
 @media screen and (min-width: 768px) {
-    enTete {
+
+   enTete {
         grid-template-columns: 256px 250px 1fr;
     }
-    
-    itemNav {
 
-    }
+}
 
     #menuResponsive {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
-    enTete {
+
+    /*    enTete {
         grid-template-columns: 256px repeat(2, 1fr);
     }
+*/  
+
 }
 
 @media screen and (min-width: 1200px) {
+    
+    article {
+        display: flex;
+        flex-direction: row;
+    }
 
+    .piedDePage > p {
+
+    }
+    
 }
