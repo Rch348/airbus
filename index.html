@@ -3,52 +3,59 @@
 <html lang='fr'>
 
     <head>
-      <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
+
+        <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
         <meta charset='utf-8' />
         <meta name='description' content='Site de présentation des modèles Airbus' />
         <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
-        <meta author='Loris Roch' />
-        <meta name='viewport' content='width=device-width,initial-scale=1' /> <!--Adaptation à tous les écrans-->
+        <meta author='Roch' />
+        <!--Adaptation à tous les écrans-->
+        <meta name='viewport' content='width=device-width,initial-scale=1' />
         <title>Airbus</title>
-        <link rel='stylesheet' href='/css/normalize.css' />
-        <link rel='stylesheet' href='/css/styles.css' />
+        <link rel='stylesheet' href='assets/css/normalize.css' />
+        <link rel='stylesheet' href='assets/css/styles.css' />
         <script src='main.js' defer></script>
+
     </head>
 
     <body>
+
          <!-- EN-TÊTE -->
         <header class='enTete'>
 
             <!-- BARRE DE NAVIGATION -->
-            <nav class='nav'>
+            <nav class='nav d-flex'>
                <!-- ICÔNE ACCUEIL -->
-               <a href='/html/index.html' class='logo'>
-                  <img src='/images/logoAirbus.jpg' />
+               <a href='index.html' class='logo'>
+                  <img src='assets/images/logoAirbus.jpg' />
                </a>
                <!-- Menu principal -->
-                <h1 class='access'>Menu principal</h1>
+                <p class='access'>Menu principal</p>
                 <p class='access'>
                   <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
                 </p>
 
+                <!--  -->
                 <ul class="itemNav">
                     <li><a href='index.html'>Accueil</a></li> 
-                    <li><a href='modeles.html'>Modèles</a></li>
-                    <li><a href='aPropos.html'>A propos</a></li>
+                    <li><a href='gamme.html'>Gamme</a></li>
+                    <li><a href='aPropos.html'>À propos</a></li>
                     <li><a href='formulaire.html'>Contact</a></li>
                 </ul>
-                <button id='menuResponsive'><img src='/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
+                <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
             </nav>
             
         </header>
 
          <!-- PAGE D'ACCUEIL -->
-        <section id="contenu">
+        <section class="contenu">
             <main class='contenuPage'>
                 <h1>AIRBUS</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur purus diam, efficitur eu fringilla ut, condimentum vel est. Sed vitae consectetur mauris, vulputate hendrerit magna. In eu lacus augue. Nulla pellentesque id ex at lacinia. Nam gravida orci eros, quis volutpat felis dictum vel. Donec fringilla sem lacus, eget gravida ex consequat vel. Nunc mattis arcu orci, sed egestas arcu malesuada eu. Nam fermentum, lorem sed venenatis tristique, nunc dolor mattis metus, porta placerat libero diam ornare tortor. Suspendisse ullamcorper, lorem posuere lobortis malesuada, eros mauris molestie est, non dignissim dolor augue eget ipsum. Donec imperdiet, lacus fermentum vehicula auctor, nulla velit congue nibh, eget aliquet lorem tellus vel dui. Integer eget elit sit amet ex commodo laoreet. Sed viverra sapien id fringilla elementum. Integer quis lorem eget arcu accumsan lobortis et sit amet lectus. Nullam porta elit nunc, sed tincidunt massa tincidunt vel. Aenean volutpat aliquet blandit.</p>
             </main>
         </section>
+
+        <!-- PIED DE PAGE -->
         <footer class='piedDePage'>
             <p>&copy; Copyright AIRBUS / 2023</p>
         </footer>

@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang='fr'>
+
     <head>
-      <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
+
+        <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
         <meta charset='utf-8' />
         <meta name='description' content='Site de présentation des modèles Airbus' />
         <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
-        <meta author='Loris Roch' />
-        <meta name='viewport' content='width=device-width,initial-scale=1' /> <!--Adaptation à tous les écrans-->
-        <title>Airbus</title>
-        <link rel='stylesheet' href='/css/normalize.css' />
-        <link rel='stylesheet' href='/css/styles.css' />
+        <meta author='Roch' />
+        <!--Adaptation à tous les écrans-->
+        <meta name='viewport' content='width=device-width,initial-scale=1' />
+        <title>Message envoyé</title>
+        <link rel='stylesheet' href='assets/css/normalize.css' />
+        <link rel='stylesheet' href='assets/css/styles.css' />
         <script src='main.js' defer></script>
+
     </head>
+
     <body>
+
+         <!-- EN-TÊTE -->
         <header class='enTete'>
-            <a href='/html/index.html' class='logo'><img src='/images/logoAirbus.jpg' /></a>
+
+            <!-- BARRE DE NAVIGATION -->
             <nav class='nav'>
+               <!-- ICÔNE ACCUEIL -->
+               <a href='index.html' class='logo'>
+                  <img src='assets/images/logoAirbus.jpg' />
+               </a>
+               <!-- Menu principal -->
                 <h1 class='access'>Menu principal</h1>
-                <p class='access'><a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a></p>
+                <p class='access'>
+                  <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
+                </p>
+
                 <ul class="itemNav">
-                    <li><a href='index.html'>Accueil</a></li><!--"index.html" = Nom obligatoire de la page d'accueil pour indiquer aux serveurs le point de départ de la navigation dans le site.-->
-                    <li><a href='modeles.html'>Modèles</a></li>
-                    <li><a href='aPropos.html'>A propos</a></li>
+                    <li><a href='index.html'>Accueil</a></li> 
+                    <li><a href='gamme.html'>Gamme</a></li>
+                    <li><a href='aPropos.html'>À propos</a></li>
                     <li><a href='formulaire.html'>Contact</a></li>
                 </ul>
+                <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
             </nav>
-            <button id='menuResponsive'><img src='/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
+            
         </header>
+
         <section id="contenu">
             <main class='contenuPage'>
-                <p>Votre message a été envoyé avec succès !<br />
-                Merci beaucoup pour votre retour, nous accordons une grande importance à votre avis.<br/>
+                <p>Votre message a été envoyé avec succès !
+                Merci beaucoup pour votre retour, nous accordons une grande importance à votre avis.
                 Nous vous répondrons avec plaisir dans les plus bref délais :)</p>
             </main>
         </section>
