@@ -72,7 +72,7 @@ ul
 
 .nav 
 {
-   align-items: center;
+    align-items: center;
     background-color: var(--airbus-blue);
     color: var(--white);
        /* gap: 3rem; */
