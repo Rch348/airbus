@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang='fr'>
 
-    <head>
+   <head>
 
-        <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
-        <meta charset='utf-8' />
-        <meta name='description' content='Site de présentation des modèles Airbus' />
-        <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
-        <meta author='Roch' />
-        <!--Adaptation à tous les écrans-->
-        <meta name='viewport' content='width=device-width,initial-scale=1' />
-        <title>Contact</title>
-        <link rel='stylesheet' href='assets/css/normalize.css' />
-        <link rel='stylesheet' href='assets/css/styles.css' />
-        <script src='main.js' defer></script>
+      <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
+      <meta charset='utf-8' />
+      <meta name='description' content='Site de présentation des modèles Airbus' />
+      <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
+      <meta author='Roch' />
+      <!-- Adaptation à tous les écrans -->
+      <meta name='viewport' content='width=device-width,initial-scale=1' />
+      <title>Contact</title>
+      <!-- <link rel='stylesheet' href='assets/css/normalize.css' /> -->
+      <link rel='stylesheet' href='assets/css/styles.css' />
+      <script src='main.js' defer></script>
 
-    </head>
+   </head>
 
-    <body>
+   <body>
 
-         <!-- EN-TÊTE -->
-        <header class='enTete'>
+      <!-- EN-TÊTE -->
+      <header class='enTete'>
 
-            <!-- BARRE DE NAVIGATION -->
-            <nav class='nav'>
-               <!-- ICÔNE ACCUEIL -->
-               <a href='index.html' class='logo'>
-                  <img src='assets/images/logo_airbus.png' />
-               </a>
-               <!-- Menu principal -->
-                <h1 class='access'>Menu principal</h1>
-                <p class='access'>
-                  <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
-                </p>
+         <!-- BARRE DE NAVIGATION -->
+         <nav class='nav d-flex'>
 
-                <ul class="itemNav">
-                    <li><a href='index.html'>Accueil</a></li> 
-                    <li><a href='gamme.html'>Gamme</a></li>
-                    <li><a href='aPropos.html'>À propos</a></li>
-                    <li><a href='formulaire.html'>Contact</a></li>
-                </ul>
-                <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
-            </nav>
-            
-        </header>
+            <!-- ICÔNE ACCUEIL -->
+            <a href='index.html' class='logo'>
+               <img src='assets/images/logo_airbus.png' />
+            </a>
 
-        <section id="contenu">
-            <main class='contenuPage'>
-            <h1>Contactez-nous</h1>
-            <form id="frm" action="envoi.html"><!--Attribut "action" utilisé pour spécifier l'adresse du fichier vers lequel le forulaire va envoyer les données. Le formulaire HTML se contente juste de collecter les données alors que le traitement de ces données aura lieu sur le serveur à l'aide de PHP ou autres...-->
-                <div><!--1er div pour séparer en 2 colonnes-->
-                    <div><!--1 div pour chaque champ-->
-                        <label for="fName">Prénom</label>
-                        <input type="text" name="fName" id="fName" placeholder="Tapez votre prénom" autofocus><!--Attribut "name" = nom de la variable pour le traitement des données lors de l'envoi vers un script (PHP) / Valeur attribut "id" a l'habitude d'être la même que celle de "name"-->
-                    </div>
-                    <div><label for="lName">Nom</label>
-                        <input type="text" name="lName" id="lName" placeholder="Tapez votre nom de famille">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Tapez votre email" required>
-                    </div>
-                </div>
-                <div><!--2ème colonne-->
-                    <div><!--Conteneur du champ du msg-->
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Tapez votre message" maxlength="1000" required></textarea>
-                    </div>
-                </div>
-                <button type="submit" id="submit">Envoyer</button>
-            </form>
-            </main>
-        </section>
-        <footer class="piedDePage">
-            <p>&copy; Copyright AIRBUS / 2023</p>
-        </footer>     
-    </body>
+            <!-- MENU ACCESSIBILITÉ -->
+            <p class='access'>Menu principal</p>
+            <p class='access'>
+            <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
+            </p>
+
+            <!-- MENU -->
+            <ul class="menu">
+               <li><a href='index.html'>Accueil</a></li> 
+               <li><a href='gamme.html'>Gamme</a></li>
+               <li><a href='aPropos.html'>À propos</a></li>
+               <li><a href='formulaire.html'>Contact</a></li>
+            </ul>
+
+            <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
+
+         </nav>
+         
+      </header>
+
+      <!-- CONTENU PRINCIPAL -->
+      <main class='contenuPage container'>
+
+         <h1>Contactez-nous</h1>
+
+         <form id="frm" action="envoi.html"><!--Attribut "action" utilisé pour spécifier l'adresse du fichier vers lequel le formulaire va envoyer les données. Le formulaire HTML se contente juste de collecter les données alors que le traitement de ces données aura lieu sur le serveur à l'aide de PHP ou autres...-->
+            <div>
+               <div>
+                  <label for="fName">Prénom</label>
+                  <input type="text" name="fName" id="fName" placeholder="Tapez votre prénom" autofocus><!--Attribut "name" = nom de la variable pour le traitement des données lors de l'envoi vers un script (PHP) / Valeur attribut "id" a l'habitude d'être la même que celle de "name"-->
+               </div>
+               <div><label for="lName">Nom</label>
+                  <input type="text" name="lName" id="lName" placeholder="Tapez votre nom de famille">
+               </div>
+               <div>
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" placeholder="Tapez votre email" required>
+               </div>
+            </div>
+            <div>
+               <div>
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" placeholder="Tapez votre message" maxlength="1000" required></textarea>
+               </div>
+            </div>
+            <button type="submit" id="submit">Envoyer</button>
+         </form>
+
+      </main>
+
+      <footer class="piedDePage">
+         <p>&copy; Copyright AIRBUS / 2023</p>
+      </footer>
+
+   </body>
+     
 </html>

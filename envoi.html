@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang='fr'>
 
-    <head>
+   <head>
 
-        <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
-        <meta charset='utf-8' />
-        <meta name='description' content='Site de présentation des modèles Airbus' />
-        <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
-        <meta author='Roch' />
-        <!--Adaptation à tous les écrans-->
-        <meta name='viewport' content='width=device-width,initial-scale=1' />
-        <title>Message envoyé</title>
-        <link rel='stylesheet' href='assets/css/normalize.css' />
-        <link rel='stylesheet' href='assets/css/styles.css' />
-        <script src='main.js' defer></script>
+      <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
+      <meta charset='utf-8' />
+      <meta name='description' content='Site de présentation des modèles Airbus' />
+      <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
+      <meta author='Roch' />
+      <!-- Adaptation à tous les écrans -->
+      <meta name='viewport' content='width=device-width,initial-scale=1' />
+      <title>Message envoyé</title>
+      <!-- <link rel='stylesheet' href='assets/css/normalize.css' /> -->
+      <link rel='stylesheet' href='assets/css/styles.css' />
+      <script src='main.js' defer></script>
 
-    </head>
+   </head>
 
-    <body>
+   <body>
 
-         <!-- EN-TÊTE -->
-        <header class='enTete'>
+      <!-- EN-TÊTE -->
+      <header class='enTete'>
 
-            <!-- BARRE DE NAVIGATION -->
-            <nav class='nav'>
-               <!-- ICÔNE ACCUEIL -->
-               <a href='index.html' class='logo'>
-                  <img src='assets/images/logo_airbus.png' />
-               </a>
-               <!-- Menu principal -->
-                <h1 class='access'>Menu principal</h1>
-                <p class='access'>
-                  <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
-                </p>
+         <!-- BARRE DE NAVIGATION -->
+         <nav class='nav d-flex'>
 
-                <ul class="itemNav">
-                    <li><a href='index.html'>Accueil</a></li> 
-                    <li><a href='gamme.html'>Gamme</a></li>
-                    <li><a href='aPropos.html'>À propos</a></li>
-                    <li><a href='formulaire.html'>Contact</a></li>
-                </ul>
-                <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
-            </nav>
-            
-        </header>
+            <!-- ICÔNE ACCUEIL -->
+            <a href='index.html' class='logo'>
+               <img src='assets/images/logo_airbus.png' />
+            </a>
 
-        <section id="contenu">
-            <main class='contenuPage'>
-                <p>Votre message a été envoyé avec succès !
-                Merci beaucoup pour votre retour, nous accordons une grande importance à votre avis.
-                Nous vous répondrons avec plaisir dans les plus bref délais :)</p>
-            </main>
-        </section>
-        <footer class="piedDePage">
-            <p>&copy; Copyright AIRBUS / 2023</p>
-        </footer>
-    </body>
+            <!-- MENU ACCESSIBILITÉ -->
+            <p class='access'>Menu principal</p>
+            <p class='access'>
+            <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
+            </p>
+
+            <!-- MENU -->
+            <ul class="menu">
+               <li><a href='index.html'>Accueil</a></li> 
+               <li><a href='gamme.html'>Gamme</a></li>
+               <li><a href='aPropos.html'>À propos</a></li>
+               <li><a href='formulaire.html'>Contact</a></li>
+            </ul>
+
+            <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
+
+         </nav>
+         
+      </header>
+
+      <!-- CONTENU PRINCIPAL -->
+      <main class='contenuPage container'>
+         <p>Votre message a été envoyé avec succès !
+         Merci beaucoup pour votre retour, nous accordons une grande importance à votre avis.
+         Nous vous répondrons avec plaisir dans les plus bref délais :)</p>
+      </main>
+
+      <footer class="piedDePage">
+         <p>&copy; Copyright AIRBUS / 2023</p>
+      </footer>
+
+   </body>
+   
 </html>

@@ -1,116 +1,121 @@
 <!DOCTYPE html>
 <html lang='fr'>
 
-    <head>
+   <head>
 
-        <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
-        <meta charset='utf-8' />
-        <meta name='description' content='Site de présentation des modèles Airbus' />
-        <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
-        <meta author='Roch' />
-        <!--Adaptation à tous les écrans-->
-        <meta name='viewport' content='width=device-width,initial-scale=1' /> 
-        <title>Gamme Airbus</title>
-        <link rel='stylesheet' href='assets/css/normalize.css' />
-        <link rel='stylesheet' href='assets/css/styles.css' />
-        <script src='main.js' defer></script>
+      <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
+      <meta charset='utf-8' />
+      <meta name='description' content='Site de présentation des modèles Airbus' />
+      <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
+      <meta author='Roch' />
+      <!-- Adaptation à tous les écrans -->
+      <meta name='viewport' content='width=device-width,initial-scale=1' />
+      <title>Gamme Airbus</title>
+      <!-- <link rel='stylesheet' href='assets/css/normalize.css' /> -->
+      <link rel='stylesheet' href='assets/css/styles.css' />
+      <script src='main.js' defer></script>
 
-    </head>
+   </head>
 
-    <body>
+   <body>
 
-         <!-- EN-TÊTE -->
-        <header class='enTete'>
+      <!-- EN-TÊTE -->
+      <header class='enTete'>
 
-            <!-- BARRE DE NAVIGATION -->
-            <nav class='nav d-flex'>
-               <!-- ICÔNE ACCUEIL -->
-               <a href='index.html'>
-                  <img src='assets/images/logo_airbus.png' class='logo'>
-               </a>
-               <!-- Menu principal -->
-                <h1 class='access'>Menu principal</h1>
-                <p class='access'>
-                  <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
-                </p>
+         <!-- BARRE DE NAVIGATION -->
+         <nav class='nav d-flex'>
 
-                <ul class="menu d-flex">
-                    <li><a href='index.html'>Accueil</a></li> 
-                    <li><a href='gamme.html'>Gamme</a></li>
-                    <li><a href='aPropos.html'>À propos</a></li>
-                    <li><a href='formulaire.html'>Contact</a></li>
-                </ul>
-                <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
-            </nav>
-            
-        </header>
+            <!-- ICÔNE ACCUEIL -->
+            <a href='index.html' class='logo'>
+               <img src='assets/images/logo_airbus.png' />
+            </a>
 
-        <!-- MODÈLES -->
-        <section id="contenu">    
-            <main class='contenuPage'>
-                <h1>GAMME AIRBUS</h1>
-                <article id="A220">
-                    <figure>
-                        <figcaption id="A220">A220</figcaption>
-                        <img src="assets/images/a220.jpg" alt="image d'un airbus a220" class="imgModele" />
-                    </figure>
-                    <p id="A220">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget dolor facilisis, cursus nulla id, vehicula lacus. In nec mi nibh. Quisque dui augue, lobortis ut odio in, ornare viverra magna. Praesent ac facilisis sapien. Morbi velit libero, congue ac lacus vel, pharetra dignissim augue. Nam dui sem, maximus vel nisi ut, gravida bibendum libero. Etiam imperdiet quis nibh sed feugiat.
-                    </p>
-                </article>
-                <article id="A320">
-                    <figure>
-                        <figcaption id="A320">A320</figcaption>
-                        <img src="assets/images/a320.jpg" alt="image d'un airbus a320" class="imgModele" />
-                    </figure>
-                    <p id="A320">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget dolor facilisis, cursus nulla id, vehicula lacus. In nec mi nibh. Quisque dui augue, lobortis ut odio in, ornare viverra magna. Praesent ac facilisis sapien. Morbi velit libero, congue ac lacus vel, pharetra dignissim augue. Nam dui sem, maximus vel nisi ut, gravida bibendum libero. Etiam imperdiet quis nibh sed feugiat.
-                    </p>
-                </article>
-                <article id="A330">
-                    <figure>    
-                        <figcaption id="A330">A330</figcaption>
-                        <img src="assets/images/a330.jpg" alt="image d'un airbus a330" class="imgModele" >
-                    </figure>    
-                    <p id="A330">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget dolor facilisis, cursus nulla id, vehicula lacus. In nec mi nibh. Quisque dui augue, lobortis ut odio in, ornare viverra magna. Praesent ac facilisis sapien. Morbi velit libero, congue ac lacus vel, pharetra dignissim augue. Nam dui sem, maximus vel nisi ut, gravida bibendum libero. Etiam imperdiet quis nibh sed feugiat.
-                    </p>
-                </article>
-                <article id="A340">
-                    <figure>    
-                        <figcaption id="A340">A340</figcaption>
-                        <img src="assets/images/a340.jpg" alt="image d'un airbus a340" class="imgModele" />
-                    </figure>    
-                    <p id="A340">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat odio vel tristique finibus. Cras dictum quis massa a facilisis. Quisque ipsum mi, sollicitudin at ex at, sollicitudin ultrices felis. In tincidunt scelerisque quam, a malesuada felis interdum id. Aenean at fringilla turpis. Aliquam eu libero nec ex rhoncus sagittis. Sed efficitur magna eget varius vestibulum.
-                    </p>
-                </article>
-                <article id="A350">
-                    <figure>   
-                        <figcaption id="A350">A350</figcaption>
-                        <img src="assets/images/a350.jpg" alt="image d'un airbus a350" class="imgModele" />
-                    </figure>     
-                    <p id="A350">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat odio vel tristique finibus. Cras dictum quis massa a facilisis. Quisque ipsum mi, sollicitudin at ex at, sollicitudin ultrices felis. In tincidunt scelerisque quam, a malesuada felis interdum id. Aenean at fringilla turpis. Aliquam eu libero nec ex rhoncus sagittis. Sed efficitur magna eget varius vestibulum.
-                    </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0ElFcm058BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!--Pour intégrer une vidéo Youtube (ou autre), aller voir la vidéo en question sur Youtube, clic sur PARTAGER, Intégrer et copier-coller le code.-->
-                </article>
-                <article id="A380">
-                    <figure>    
-                        <figcaption id="A380">A380</figcaption>
-                        <img src="assets/images/a380.jpg" alt="image d'un airbus a380" class="imgModele" />                        
-                    </figure>    
-                    <p id="A380">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat odio vel tristique finibus. Cras dictum quis massa a facilisis. Quisque ipsum mi, sollicitudin at ex at, sollicitudin ultrices felis. In tincidunt scelerisque quam, a malesuada felis interdum id. Aenean at fringilla turpis. Aliquam eu libero nec ex rhoncus sagittis. Sed efficitur magna eget varius vestibulum.
-                    </p>
-                </article>
-            </main>
-            <aside id="annexe">
-                
-            </aside>
-        </section>
-        <footer class="piedDePage">
-            <p>&copy; Copyright AIRBUS / 2023</p>
-        </footer>
-    </body>
+            <!-- MENU ACCESSIBILITÉ -->
+            <p class='access'>Menu principal</p>
+            <p class='access'>
+            <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
+            </p>
+
+            <!-- MENU -->
+            <ul class="menu">
+               <li><a href='index.html'>Accueil</a></li> 
+               <li><a href='gamme.html'>Gamme</a></li>
+               <li><a href='aPropos.html'>À propos</a></li>
+               <li><a href='formulaire.html'>Contact</a></li>
+            </ul>
+
+            <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
+
+         </nav>
+         
+      </header>
+
+      <!-- CONTENU PRINCIPAL -->
+      <main class='contenuPage container'>
+
+         <h1>GAMME AIRBUS</h1>
+         <article id="A220">
+            <figure>
+               <figcaption id="A220">A220</figcaption>
+               <img src="assets/images/a220.jpg" alt="image d'un airbus a220" class="imgModele" />
+            </figure>
+            <p id="A220">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget dolor facilisis, cursus nulla id, vehicula lacus. In nec mi nibh. Quisque dui augue, lobortis ut odio in, ornare viverra magna. Praesent ac facilisis sapien. Morbi velit libero, congue ac lacus vel, pharetra dignissim augue. Nam dui sem, maximus vel nisi ut, gravida bibendum libero. Etiam imperdiet quis nibh sed feugiat.
+            </p>
+         </article>
+         <article id="A320">
+            <figure>
+               <figcaption id="A320">A320</figcaption>
+               <img src="assets/images/a320.jpg" alt="image d'un airbus a320" class="imgModele" />
+            </figure>
+            <p id="A320">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget dolor facilisis, cursus nulla id, vehicula lacus. In nec mi nibh. Quisque dui augue, lobortis ut odio in, ornare viverra magna. Praesent ac facilisis sapien. Morbi velit libero, congue ac lacus vel, pharetra dignissim augue. Nam dui sem, maximus vel nisi ut, gravida bibendum libero. Etiam imperdiet quis nibh sed feugiat.
+            </p>
+         </article>
+         <article id="A330">
+            <figure>    
+               <figcaption id="A330">A330</figcaption>
+               <img src="assets/images/a330.jpg" alt="image d'un airbus a330" class="imgModele" >
+            </figure>    
+            <p id="A330">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget dolor facilisis, cursus nulla id, vehicula lacus. In nec mi nibh. Quisque dui augue, lobortis ut odio in, ornare viverra magna. Praesent ac facilisis sapien. Morbi velit libero, congue ac lacus vel, pharetra dignissim augue. Nam dui sem, maximus vel nisi ut, gravida bibendum libero. Etiam imperdiet quis nibh sed feugiat.
+            </p>
+         </article>
+         <article id="A340">
+            <figure>    
+               <figcaption id="A340">A340</figcaption>
+               <img src="assets/images/a340.jpg" alt="image d'un airbus a340" class="imgModele" />
+            </figure>    
+            <p id="A340">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat odio vel tristique finibus. Cras dictum quis massa a facilisis. Quisque ipsum mi, sollicitudin at ex at, sollicitudin ultrices felis. In tincidunt scelerisque quam, a malesuada felis interdum id. Aenean at fringilla turpis. Aliquam eu libero nec ex rhoncus sagittis. Sed efficitur magna eget varius vestibulum.
+            </p>
+         </article>
+         <article id="A350">
+            <figure>   
+               <figcaption id="A350">A350</figcaption>
+               <img src="assets/images/a350.jpg" alt="image d'un airbus a350" class="imgModele" />
+            </figure>     
+            <p id="A350">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat odio vel tristique finibus. Cras dictum quis massa a facilisis. Quisque ipsum mi, sollicitudin at ex at, sollicitudin ultrices felis. In tincidunt scelerisque quam, a malesuada felis interdum id. Aenean at fringilla turpis. Aliquam eu libero nec ex rhoncus sagittis. Sed efficitur magna eget varius vestibulum.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0ElFcm058BM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!--Pour intégrer une vidéo Youtube (ou autre), aller voir la vidéo en question sur Youtube, clic sur PARTAGER, Intégrer et copier-coller le code.-->
+         </article>
+         <article id="A380">
+            <figure>    
+               <figcaption id="A380">A380</figcaption>
+               <img src="assets/images/a380.jpg" alt="image d'un airbus a380" class="imgModele" />                        
+            </figure>    
+            <p id="A380">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat odio vel tristique finibus. Cras dictum quis massa a facilisis. Quisque ipsum mi, sollicitudin at ex at, sollicitudin ultrices felis. In tincidunt scelerisque quam, a malesuada felis interdum id. Aenean at fringilla turpis. Aliquam eu libero nec ex rhoncus sagittis. Sed efficitur magna eget varius vestibulum.
+            </p>
+         </article>
+
+      </main>
+
+      <footer class="piedDePage">
+         <p>&copy; Copyright AIRBUS / 2023</p>
+      </footer>
+
+   </body>
+   
 </html>
