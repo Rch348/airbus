@@ -3,7 +3,7 @@
 :root 
 {
     --airbus-blue: #001f59;
-    --black: #000627;
+    --dark: #000627;
     --white: #fff;
 }
 
@@ -22,15 +22,22 @@ html
 
 body 
 {
-    color: var(--black);
-    font-size: 1.9rem;
-    font-weight: 400;
+   color: var(--black);
+   font-size: 1.6rem;
+   font-weight: 400;
 } 
 
 a
 {
    color: inherit;
+   display: inline-block;
    text-decoration: none;
+}
+
+img
+{
+   object-fit: cover;
+   width: 100%;
 }
 
 ul
@@ -45,8 +52,13 @@ ul
 
 .access 
 {
-    position: absolute;
-    left: -15000px;
+   position: absolute;
+   left: -1500rem;
+}
+
+.container
+{
+   margin: 0 140rem;
 }
 
 .d-flex
@@ -97,11 +109,6 @@ ul
 {
    margin-right: 3rem;
 }
-
-
-
-
-
 
 
 #menuResponsive 
@@ -193,7 +200,7 @@ iframe
     /* Positionnement du pied de page en bas de page */
     /* bottom: 0;              */
     background-color: var(--airbus-blue);
-    height: 7rem;
+    line-height: 7rem;
 
 }
 
