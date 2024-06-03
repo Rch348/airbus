@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang='fr'>
 
-    <head>
+   <head>
 
-        <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
-        <meta charset='utf-8' />
-        <meta name='description' content='Site de présentation des modèles Airbus' />
-        <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
-        <meta author='Roch' />
-        <!--Adaptation à tous les écrans-->
-        <meta name='viewport' content='width=device-width,initial-scale=1' />
-        <title>À propos</title>
-        <link rel='stylesheet' href='assets/css/normalize.css' />
-        <link rel='stylesheet' href='assets/css/styles.css' />
-        <script src='main.js' defer></script>
+      <!-- Format d'encodage de caractères compatible ASCII permettant, grâce à des séquences d'octets variables, de représenter les 110000 glyphes Unicode -->
+      <meta charset='utf-8' />
+      <meta name='description' content='Site de présentation des modèles Airbus' />
+      <meta name='keywords' content='avion commercial, moyen porteur, gros porteur, transport aerien, avion a reaction' />
+      <meta author='Roch' />
+      <!-- Adaptation à tous les écrans -->
+      <meta name='viewport' content='width=device-width,initial-scale=1' />
+      <title>Airbus</title>
+      <!-- <link rel='stylesheet' href='assets/css/normalize.css' /> -->
+      <link rel='stylesheet' href='assets/css/styles.css' />
+      <script src='main.js' defer></script>
 
-    </head>
+   </head>
 
-    <body>
+   <body>
 
-         <!-- EN-TÊTE -->
-        <header class='enTete'>
+      <!-- EN-TÊTE -->
+      <header class='enTete'>
 
-            <!-- BARRE DE NAVIGATION -->
-            <nav class='nav'>
-               <!-- ICÔNE ACCUEIL -->
-               <a href='index.html' class='logo'>
-                  <img src='assets/images/logo_airbus.png' />
-               </a>
-               <!-- Menu principal -->
-                <h1 class='access'>Menu principal</h1>
-                <p class='access'>
+         <!-- BARRE DE NAVIGATION -->
+         <nav class='nav d-flex'>
+
+            <!-- ICÔNE ACCUEIL -->
+            <a href='index.html' class='logo'>
+               <img src='assets/images/logo_airbus.png' />
+            </a>
+
+            <!-- MENU ACCESSIBILITÉ -->
+            <ul class="access">
+               <p>Menu principal</p>
+               <p>
                   <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
-                </p>
+               </p>
+            </ul>
 
-                <ul class="itemNav">
-                    <li><a href='index.html'>Accueil</a></li> 
-                    <li><a href='gamme.html'>Gamme</a></li>
-                    <li><a href='aPropos.html'>À propos</a></li>
-                    <li><a href='formulaire.html'>Contact</a></li>
-                </ul>
-                <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
-            </nav>
-            
-        </header>
+            <!-- MENU -->
+            <ul class="menu">
+               <li><a href='index.html'>Accueil</a></li> 
+               <li><a href='gamme.html'>Gamme</a></li>
+               <li><a href='aPropos.html'>À propos</a></li>
+               <li><a href='formulaire.html'>Contact</a></li>
+            </ul>
 
-        <section id="contenu">
-            <main class='contenuPage'>
+            <!-- MENU BURGER -->
+            <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
+
+         </nav>
+
+      </header>
+
+      <!-- CONTENU PRINCIPAL -->
+      <section class='principal d-flex centre'>
+         <div class="">
+
             <h1>A propos d'Airbus</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor vel massa quis blandit. Donec ut maximus velit, sed tincidunt ante. Phasellus egestas velit vitae sapien egestas hendrerit. Donec bibendum ligula dolor, vel ultricies sapien porta vitae. Donec imperdiet convallis dolor, nec sollicitudin tellus elementum eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non lectus nec ipsum elementum euismod. Morbi non semper lorem. Aenean euismod dolor eu dui rutrum, vel egestas sapien tincidunt. Aliquam vulputate tincidunt consequat. Nunc tempor rhoncus pellentesque. Donec pellentesque sed leo laoreet venenatis. Duis non massa urna. Cras feugiat libero ac fermentum dictum. Nam consequat, metus sit amet sollicitudin dignissim, libero dolor ullamcorper lacus, id eleifend libero lorem et sapien.</p>
-            </main>
-        </section>
 
-        <footer class="piedDePage d-flex">
-            <p>&copy; Copyright AIRBUS / 2023</p>
-        </footer>
+         </div>
+      </section>
+
+      <footer>
+         <p>&copy; Copyright AIRBUS / 2023</p>
+      </footer>
+
     </body>
 
 </html>

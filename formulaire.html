@@ -31,10 +31,12 @@
             </a>
 
             <!-- MENU ACCESSIBILITÉ -->
-            <p class='access'>Menu principal</p>
-            <p class='access'>
-            <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
-            </p>
+            <ul class="access">
+               <p>Menu principal</p>
+               <p>
+                  <a href='#contenuPage' title='Accéder directement au contenu principal de cette page'>Passer le menu</a>
+               </p>
+            </ul>
 
             <!-- MENU -->
             <ul class="menu">
@@ -44,43 +46,46 @@
                <li><a href='formulaire.html'>Contact</a></li>
             </ul>
 
+            <!-- MENU BURGER -->
             <button id='menuResponsive'><img src='assets/images/iconeMenu.png' alt='Ouvrir / Fermer menu' /></button>
 
          </nav>
-         
+
       </header>
 
       <!-- CONTENU PRINCIPAL -->
-      <main class='contenuPage container'>
+      <section class='principal d-flex centre'>
+         <div class="">
 
-         <h1>Contactez-nous</h1>
+            <h1>contactez-nous</h1>
 
-         <form id="frm" action="envoi.html"><!--Attribut "action" utilisé pour spécifier l'adresse du fichier vers lequel le formulaire va envoyer les données. Le formulaire HTML se contente juste de collecter les données alors que le traitement de ces données aura lieu sur le serveur à l'aide de PHP ou autres...-->
-            <div>
+            <form id="frm" action="envoi.html"><!--Attribut "action" utilisé pour spécifier l'adresse du fichier vers lequel le formulaire va envoyer les données. Le formulaire HTML se contente juste de collecter les données alors que le traitement de ces données aura lieu sur le serveur à l'aide de PHP ou autres...-->
                <div>
-                  <label for="fName">Prénom</label>
-                  <input type="text" name="fName" id="fName" placeholder="Tapez votre prénom" autofocus><!--Attribut "name" = nom de la variable pour le traitement des données lors de l'envoi vers un script (PHP) / Valeur attribut "id" a l'habitude d'être la même que celle de "name"-->
-               </div>
-               <div><label for="lName">Nom</label>
-                  <input type="text" name="lName" id="lName" placeholder="Tapez votre nom de famille">
+                  <div>
+                     <label for="fName">Prénom</label>
+                     <input type="text" name="fName" id="fName" placeholder="Tapez votre prénom" autofocus><!--Attribut "name" = nom de la variable pour le traitement des données lors de l'envoi vers un script (PHP) / Valeur attribut "id" a l'habitude d'être la même que celle de "name"-->
+                  </div>
+                  <div><label for="lName">Nom</label>
+                     <input type="text" name="lName" id="lName" placeholder="Tapez votre nom de famille">
+                  </div>
+                  <div>
+                     <label for="email">Email</label>
+                     <input type="text" name="email" id="email" placeholder="Tapez votre email" required>
+                  </div>
                </div>
                <div>
-                  <label for="email">Email</label>
-                  <input type="text" name="email" id="email" placeholder="Tapez votre email" required>
+                  <div>
+                     <label for="message">Message</label>
+                     <textarea name="message" id="message" placeholder="Tapez votre message" maxlength="1000" required></textarea>
+                  </div>
                </div>
-            </div>
-            <div>
-               <div>
-                  <label for="message">Message</label>
-                  <textarea name="message" id="message" placeholder="Tapez votre message" maxlength="1000" required></textarea>
-               </div>
-            </div>
-            <button type="submit" id="submit">Envoyer</button>
-         </form>
+               <button type="submit" id="submit">Envoyer</button>
+            </form>
 
-      </main>
+         </div>
+      </section>
 
-      <footer class="piedDePage">
+      <footer>
          <p>&copy; Copyright AIRBUS / 2023</p>
       </footer>
 

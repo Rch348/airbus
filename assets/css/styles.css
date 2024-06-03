@@ -4,8 +4,8 @@
 :root 
 {
     --airbus-blue: #001f59;
-    --dark: #000627;
-    --white: #fff;
+    --dark: #333;
+    --white: #eff3f9;
 }
 
 *, *::before, *::after
@@ -45,12 +45,20 @@ a
 h1, h2, h3, h4, h5, h6
 {
    line-height: 1.2;
+   text-align: center;
+   text-transform: capitalize;
 }
 
 img
 {
+   display: block;
    object-fit: cover;
    width: 100%;
+}
+
+section
+{
+   background-color: var(--white);
 }
 
 ul
@@ -71,8 +79,8 @@ ul
 
 .container
 {
-   margin: 0 140rem;
-   max-width: 100%;
+   margin: 0 auto;
+   max-width: 120rem;
 }
 
 .d-flex
@@ -83,10 +91,10 @@ ul
 
 /* ------ HEADER ------ */
 
-.enTete 
+header
 {
-    background-color: var(--airbus-blue);
-
+    background-color: var(--white);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .03);
     line-height: 7rem;    
     /* Positionne l'en-tête en haut de page */
     top: 0;             
@@ -98,23 +106,20 @@ ul
 .nav 
 {
     align-items: center;
-    background-color: var(--airbus-blue);
     color: var(--white);
-   /* gap: 3rem; */
     justify-content: space-between;
 }
 
 .logo
 {
    object-fit: cover;
-
+   width: 14rem;
 }
 
 .menu
 {
-   color: var(--white);
+   color: var(--airbus-blue);
    gap: 3rem;
-
 }
 
 .menu li a
@@ -123,111 +128,49 @@ ul
 }
 
 
-#menuResponsive 
+
+/* ------ CONTENU PRINCIPAL ------ */
+
+.principal
 {
-    background-color: var(--airbus-blue);
-    color: white;
-    height: 6rem;
+   min-height: 100vh;
+   margin-top: 7rem;
+   
 }
 
-
-#contenu 
+.centre
 {
-    background: url(../images/ciel.jpg) center / cover no-repeat fixed;
+   align-items: center;
+   justify-content: center;
 }
 
-.contenuPage 
+.centre div
 {
-    background-color: rgba(255, 255, 255, 0.471);
-    /* Etend le contenu principal sur toute la hauteur de l'écran, quel que soit la dimension */
-    min-height: 100vh;          
-    display: grid;
-    /* Espacement des articles */
-    gap: 70px;         
+   flex: 0 1 50%
 }
 
-
-
-h1 
+.avion
 {
-    font-size: 7.9rem;
-    text-align: center;
-    /* padding-top: 40px; */
-}
-
-p 
-{
-    font-size: 34px;
-    text-align: left;
-    /* padding: 40px; */
-}
-
-article 
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    margin: 40px;
-    border-radius: 40px;
-}
-
-figure 
-{
-    position: center;
-}
-
-article > p 
-{
-    text-align: left;
-}
-
-figcaption 
-{
-    font-size: 40px;
-    text-align: center;
-}
-
-.imgModele 
-{
-    min-width: 60%;
-    max-width: 100%;
-    height: auto;
-    border: solid 3px white;
-    
-}
-
-iframe 
-{
-    padding-left: 40px;
-    padding-bottom: 40px;
+   height: 199px;
+   width: 434px;
 }
 
 
 
 /* ------ PIED DE PAGE ------ */
 
-.piedDePage 
-{
-    /* Positionnement du pied de page en bas de page */
-    /* bottom: 0;              */
+footer 
+{        
+   align-items: center;   
     background-color: var(--airbus-blue);
-    line-height: 7rem;
-
-}
-
-.piedDePage > p 
-{
-    align-items: center;
     color: var(--white);
-    font-size: 2rem;
+    line-height: 7rem;
     text-align: center;
-    /* Enlèvement marge blanche au dessus */ 
-    /* margin-top: 0;           */
-    /* Enlèvement bande blanche en dessous */
-    /* padding-bottom: 0;       */
 }
 
+
+
+/* ------ RESPONSIVE ------ */
 
 @media screen and (min-width: 576px) 
 {
@@ -236,49 +179,43 @@ iframe
 
 @media screen and (min-width: 768px) 
 {
-
-   enTete 
+   .nav ul 
    {
-        grid-template-columns: 256px 250px 1fr;
-    }
+      display: flex;
+      flex-direction: row;
+   }  
 
-    .nav ul 
-    {
-        display: flex;
-        flex-direction: row;
-    }  
- 
-    #menuResponsive 
-    {
-        display: none;
-    }
+   #menuResponsive 
+   {
+      display: none;
+   }
 
 }
 
-@media screen and (min-width: 1024px) 
+@media screen and (min-width: 998px) 
 {
 
-    enTete 
-    {
-        grid-template-columns: 256px repeat(2, 1fr);
-    }
+   enTete 
+   {
+      grid-template-columns: 256px repeat(2, 1fr);
+   }
   
 }
 
 @media screen and (min-width: 1200px) 
 {
     
-    article 
-    {
-        display: flex;
-        flex-direction: row;
-        padding: 60px;
-    }
+   article 
+   {
+      display: flex;
+      flex-direction: row;
+      padding: 60px;
+   }
 
-    iframe 
-    {
-        padding-top: 60px;
-        padding-right: 40px;
-    }
+   iframe 
+   {
+      padding-top: 60px;
+      padding-right: 40px;
+   }
 
 }
